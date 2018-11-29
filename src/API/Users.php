@@ -63,7 +63,7 @@ class Users
     {
         $user = $this->manager->getRepository(User::class)->findOneBy(['id' => $id]);
         if (null === $user) {
-            throw new NotFoundException('Group not found.');
+            throw new NotFoundException('User not found.');
         }
 
         $user->setEmail($this->propertyAccessor->getValue($data, '[email]') ?? $user->getEmail());
