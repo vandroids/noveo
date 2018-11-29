@@ -1,0 +1,17 @@
+/console.*
+/phpunit.*
+/php-cs-fixer.*
+/.php_cs.cache
+/nbproject/
+###> symfony/framework-bundle ###
+/.env.local
+/.env.*.local
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
